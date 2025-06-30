@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #1793d4;
+  --blue-background-text: white;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 5fr;
+    height: 100vh;
+    font-family: 'Roboto';
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    padding-left: 25px;
+    padding-top: 5px;
+    color: var(--blue-background-text);
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-logo {
+    height: 50px;
+    filter: invert(100%) sepia(4%) saturate(7482%) hue-rotate(168deg) brightness(112%) contrast(104%);
+}
