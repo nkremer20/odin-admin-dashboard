@@ -31,7 +31,6 @@ body {
 
 .dashboard-logo {
     height: 50px;
-    filter: invert(100%) sepia(4%) saturate(7482%) hue-rotate(168deg) brightness(112%) contrast(104%);
 }
 
 ul {
@@ -40,3 +39,14 @@ ul {
     padding: 0;
 }
 
+.sidebar-main-nav li {
+    margin-bottom: 20px;
+}
+
+.nav-icon {
+    height: 20px;
+}
+
+.dashboard-logo, .nav-icon {
+    filter: invert(100%) sepia(4%) saturate(7482%) hue-rotate(168deg) brightness(112%) contrast(104%);
+}
