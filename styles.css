@@ -1,6 +1,9 @@
 :root {
   --primary-color: #1793d4;
   --blue-background-text: white;
+  --white-background-text: black;
+  --secondary-color: white;
+  --accent-background: #e1e8ef;
 }
 
 body {
@@ -47,6 +50,7 @@ ul {
     margin-bottom: 20px;
     display: flex;
     gap: 15px;
+    cursor: pointer;
 }
 
 .nav-icon {
@@ -59,4 +63,71 @@ ul {
 
 .sidebar-nav li:last-child {
     margin-bottom: 0;
+}
+
+.main-section {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    padding-top: 12px;
+}
+
+.header {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search > input {
+    background-color: var(--accent-background);
+    border: 0;
+    border-radius: 15px;
+    height: 25px;
+    width: 500px;
+    padding-left: 20px;
+}
+
+.search > button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    padding: 10px;
+    cursor: pointer;   
+}
+
+.main-section-icons {
+    height: 20px;
+}
+
+.account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+}
+
+.account-image {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.profile-picture {
+    object-fit: cover;
+}
+
+.body {
+    background-color: var(--accent-background);
 }
