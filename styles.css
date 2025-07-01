@@ -6,6 +6,15 @@
   --accent-background: #e1e8ef;
 }
 
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}
+
 body {
     margin: 0;
     display: grid;
@@ -119,13 +128,62 @@ ul {
 }
 
 .account-image {
+    background-color: var(--accent-background);
     border-radius: 100%;
     height: 50px;
     width: 50px;
+    overflow: hidden;
 }
 
 .profile-picture {
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+}
+
+.header-welcome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-message {
+    align-self: center;
+}
+
+.welcome-message > h2 {
+    font-weight: 900;
+}
+
+.welcome-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: var(--accent-background);
+}
+
+.project-buttons {
+    justify-self: end;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-buttons > button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+    color: var(--blue-background-text);
+    font-weight: 600;
 }
 
 .body {
