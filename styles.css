@@ -6,7 +6,7 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) 5fr;
+    grid-template-columns: minmax(250px, 1fr) 5fr;
     height: 100vh;
     font-family: 'Roboto';
 }
@@ -39,8 +39,14 @@ ul {
     padding: 0;
 }
 
-.sidebar-main-nav li {
+.sidebar-nav {
+    margin-bottom: 40px;
+}
+
+.sidebar-nav li {
     margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 .nav-icon {
@@ -49,4 +55,8 @@ ul {
 
 .dashboard-logo, .nav-icon {
     filter: invert(100%) sepia(4%) saturate(7482%) hue-rotate(168deg) brightness(112%) contrast(104%);
+}
+
+.sidebar-nav li:last-child {
+    margin-bottom: 0;
 }
