@@ -6,7 +6,7 @@
   --accent-background: #e1e8ef;
 }
 
-h2, h3 {
+h2, h3, h5 {
     margin: 0;
 }
 
@@ -195,15 +195,15 @@ ul {
 .body {
     background-color: var(--accent-background);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 25px 25px 25px 15px;
-    gap: 50px
+    gap: 40px
 }
 
 .project-card-container {
     margin-top: 25px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
     gap: 20px
 }
 
