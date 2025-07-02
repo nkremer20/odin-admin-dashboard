@@ -6,7 +6,7 @@
   --accent-background: #e1e8ef;
 }
 
-h2 {
+h2, h3 {
     margin: 0;
 }
 
@@ -15,8 +15,13 @@ p {
     font-size: 14px;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 5fr;
     height: 100vh;
@@ -77,15 +82,17 @@ ul {
 .main-section {
     display: grid;
     grid-template-rows: 150px 1fr;
-    padding-top: 12px;
 }
 
 .header {
     background-color: var(--secondary-color);
     display: grid;
     grid-template-rows: 1fr 2fr;
+    padding-top: 12px;
     padding-left: 20px;
     padding-right: 30px;
+    box-shadow: 0px 5px 10px #acacac;
+    margin-bottom: 2px;
 }
 
 .header-top {
@@ -112,7 +119,6 @@ ul {
     background-color: rgba(255, 255, 255, 0);
     border: 0;
     padding: 10px;
-    cursor: pointer;   
 }
 
 .main-section-icons {
@@ -188,4 +194,28 @@ ul {
 
 .body {
     background-color: var(--accent-background);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 25px 25px 25px 15px;
+    gap: 50px
+}
+
+.project-card-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px
+}
+
+.project-card {
+    background-color: var(--secondary-color);
+    height: 175px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 6px 1fr;
+    overflow: hidden;
+}
+
+.card-accent {
+    background-color: #efb421;
 }
