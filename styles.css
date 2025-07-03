@@ -197,11 +197,11 @@ ul {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 25px 25px 25px 15px;
-    gap: 40px
+    gap: 20px
 }
 
 .project-card-container {
-    margin-top: 25px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
     gap: 20px
@@ -245,4 +245,25 @@ ul {
 .card-icons > img {
     height: 20px;
     cursor: pointer;
+}
+
+.announcement-container {
+    height: 250px;
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.announcement-card {
+}
+
+
+
+.trending-container {
+    height: 258px;
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-bottom: 25px;
 }
