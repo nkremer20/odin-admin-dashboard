@@ -257,7 +257,7 @@ ul {
 .annoucenment-container, .trending-container{
     margin-top: 10px;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
     background-color: var(--secondary-color);
     border-radius: 8px;
     padding: 20px;
@@ -291,4 +291,9 @@ ul {
 
 .trending-container {
     height: 183px;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
